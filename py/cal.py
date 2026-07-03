@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 operation = input("Enter operation (+, -, *, /): ")
@@ -18,7 +18,7 @@ elif operation == '/':
         print(f"The result of {num1} / {num2} is: {result}")
     else:
         print("Error: Division by zero is not allowed.")
-=======
+
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 operation = input("Enter operation (+, -, *, /): ")
@@ -38,4 +38,5 @@ elif operation == '/':
         print(f"The result of {num1} / {num2} is: {result}")
     else:
         print("Error: Division by zero is not allowed.")
->>>>>>> a6f5ec4 (Initial commit)
+else:
+    print("Error: Invalid operation. Please use +, -, *, or /.")
