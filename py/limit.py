@@ -6,7 +6,7 @@ limit = int(input("Enter the limit (max 20): "))
 # how its works ?
 # 1. loop dari 2 sampai limit
 # 2. setiap nombor , cek sama ada boleh dibahagi dengan nombor lain selain 1 dan sendiridirinya 
-# 3. kalau boleh bahagi (%== 0) , bukan prime number.
+# 3. kalau boleh bahagi (% == 0) , bukan prime number.
 # 4. kalau tak boleh bahagi dengan nombor lain, prime number.
 
 
