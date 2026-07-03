@@ -1,0 +1,7 @@
+# for loop : count
+# while loop : condition
+# (start, end, step(scale))
+# for ada 2, continue dan break
+# nested guna i : parent, j : children
+# cara nested berfungsi : loop parent akan loop dulu, baru loop children.
+# loop parent akan jalan sekali, skip, pergi ke children sampai habis, continue loop parent.
