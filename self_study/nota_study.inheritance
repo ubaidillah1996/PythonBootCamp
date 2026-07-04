@@ -1,0 +1,11 @@
+# inheritance = mewarisi
+# inheritance = satu class ambil sifat dari satu class lain, mcm parent - child.
+
+contoh analogi mudah :
+human (class parent)
+developer, engineer (class child)
+tapi pada class child, akan ada satu behavior berbeza. iaitu "super()"
+
+bahasa mudah, terciptanya inheritance adalah untuk mengelakkan berlakunya pengulangan coding dalam code.
+jadi dengan inheritance, parent __init__, child super() 
+

@@ -42,4 +42,6 @@ def show_info(self):
 # kesalahan, recap :
 # 1. init = kena ada dua underscore
 # 2. capitalize / case sensitive
-# 3. 
+
+
+# 
