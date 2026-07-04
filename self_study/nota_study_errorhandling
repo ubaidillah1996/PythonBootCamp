@@ -1,0 +1,39 @@
+# Error Handling = cara untuk handle kesilapan dalam program supaya tidak berhenti terus dari run code.
+
+# contoh untuk mudah faham :
+# try num = int(input("Enter age:"))
+# print ("You entered age:", num)
+
+# except:
+# print ("invalid input")
+
+# penting : program terus jalan, user dapat message clear
+
+# Best Practice, jangn guna except, guna error type. (spesifikan kesalahan yang berlaku)
+
+# binaan lengkap : try - except - else - finally
+
+# contoh sebenar = division calculator
+
+# try 
+
+<!-- a = int(input("enter number:"))
+b = int(input("enter number:"))
+
+result = a / b
+print("result:", result)
+
+except ZeroDivisionError :
+    print("cannot divide by zero")
+
+except ValueError :
+    print("please enter valid number")
+
+else :
+    print("calculation succed") 
+
+finally :
+    print('calculation completed") -->
+
+# except, untuk catch error
+# else , bukan untuk catch error

@@ -9,4 +9,4 @@ subject.discard("Geography")  # Discarding a subject that may not exist (no erro
 print(subject.union(Grades))  # Output: {'Math', 'Science', 'English', 'A', 'B', 'C', 'D', 'F'}
 print(Student.intersection(Grades))  # Output: set() since there are no common elements
 
-#guna add, remove, discard, and pop methods to manipulate sets
+#guna add, remove, discard, and pop methods untuk manipulate sets

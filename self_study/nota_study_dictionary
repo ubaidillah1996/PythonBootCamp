@@ -1,0 +1,136 @@
+# dictionary : struktur data yang disimpan dalam bentuk key dan value (pair)
+
+# perkataan : key
+# maksud : value
+
+# contoh :
+
+# student = {
+#     "name" : "ubai"
+#     "gender" : "male"
+
+# }
+
+# print(student)
+
+# cara nak akses :
+
+# print(student[name])
+# print(student[gender])
+
+# cara nak add new key:
+
+# student["grade"] = "A"
+# print(student)
+
+# cara nak update existing key :
+
+# student["age"] = 33
+# print(student)
+
+# cara nak delete data :
+
+# del student ["name"]
+# print(student)
+
+# cara nak loop dalam dictionary :
+
+# for key in student :
+#     print(key, student(key))
+
+# output : name = ali, umur = 33.
+
+# contoh kegunaan real world :
+
+# user profile
+# API response
+# database record
+# config setting
+
+# mini exercise :brand = Toyota
+# model = Vios
+# year = 2022
+
+# Lepas tu:
+
+# print brand
+# update year jadi 2024
+# tambah key color = "black"
+# print semua data
+
+# car = {
+#     "brand" : "Toyota",
+#     "model" : "Vios",
+#     "year" : 2022
+# }
+
+# print(car) # akan keluar semua output tu.
+# print(car[brand]) # untuk print brand sahaja
+
+# car["color"] = "black" # untuk tambah key color
+# car["year"] = 2024 # untuk update year
+# print(car) # untuk print semua data
+
+# next : Dictionary dalam dictionary (nested dictionary) : dicstionary boleh simpan dictionary dalam die.
+# means : pendaftaran pelajar, setiap pelajar ada dictionary atau maklumat tersendiri.
+
+# contoh :
+
+# cars = {
+# "car1" : {
+#     "brand" : "suzuki"
+#     "model" : "vios"
+# },
+# "car2" : {
+#     "brand" : "yamaha"
+#     "model" : "135lc"
+# }
+# }
+
+# cara access :
+# print(cars["car1"]["brand"])
+
+# cara add :
+# cars["car1"]["color"] = "black"
+
+# cara update :
+# cars["car2"]["year"] = 2029
+
+# cara loop nested dalam dictionary
+# for car in cars:
+# print (car)
+# print (cars[car]) # output akan keluar semua maklumat cars ( 1 dan 2 )
+
+# mini exercise
+
+# students = {
+# "student1" : {
+#     "name" : "Ali"
+#     "age" : 20
+#     "course" : "python"
+# },
+# "student2" : {
+#     "name" : "siti"
+#     "age" : 22
+#     "course" : "data sciene"
+# }}
+
+# 1. print nama student 1
+# print(student["student1"]["name"])
+
+# 2. update age student2 jadi 25
+# students["student2"]["age"] = 25
+
+# 3. add key "grade" : "A" untuk student1
+# students["student1"]["grade"] = "A"
+
+# print semua data
+# for student in students
+# print (student)
+# print (students[student])
+
+
+
+
+
+

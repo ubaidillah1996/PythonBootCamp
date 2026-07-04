@@ -1,0 +1,47 @@
+# function : sekumpulan function yang diberi nama dan boleh dipanggil bila-bila masa.
+
+# contoh :
+
+# def welcome ():
+#     print("Selamat datang ke program kami!")
+
+# welcome()  # run fungsi welcome() untuk print out mesej selamat datang
+
+# exercise 
+
+# show_name()
+
+# def show_name():
+#     print("my name is ubaidillah")
+
+# show_name()
+
+# akan ada masalah kalau nak panggil nama lain, jika kita tambahkan kegunaan argumen dan parameter.
+# arguman : isi dalam bekas
+# parameter : bekas
+
+# def greet_name(name):
+#     print(f"Hello, {name}!")
+
+# greet_name("ubaidillah")
+
+# # function dengan 2 parameter
+
+# def introduce(name, age):
+#     print(f"My name is {name} and i am {age} years old.")
+
+# introduce("ubaidillah", 20)
+
+# # kegunaan return dalam function : penggunaan "print" tak dapat simpan jawapan tu untuk digunakan semula.
+# # penggunan return : simpan jawpan tu dalam variable, boleh guna semula (hantar nilai ke tempat yang panggil function tu)
+
+# def multiply(num1, num2):
+#     return num1 * num2
+
+# answer = multiply(5, 3) # perlu ada di luar function scope
+# print(answer) # jawpan 15
+
+
+
+    
+

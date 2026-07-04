@@ -1,0 +1,45 @@
+# apa itu class ? 
+# adalah blue print atau template
+
+# seolah nak design rumah, kita boleh buat banyak objek
+# basic concept : 
+# class : design , object : benda sebenar dari design
+
+# contoh real life : class = kereta, objek = vios, toyota.
+
+# basic syntax untuk buat class
+# class car:
+# pass (biar koosong dulu, supaya tak jadi error)
+
+# basic syntax class + objek
+# class car:
+# pass
+# car1 = car()
+# print (car1)
+
+# add data attribute dapat class + objek : guna _init_
+# class car:
+#   def _init_(self, brand, model, year):
+#       self.brand = brand
+#       self.model = model
+#       self.year = year
+# # bukan ke def tu variable? or function
+## add attribute ke objek, tak sama mcm list or tuple, or dictionary. takde pembuka dan penutup kata.
+
+# apa itu self = reference kepada objek itu sendiri
+
+#mini exercise :
+
+class student :
+def _init_(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+
+def show_info(self):
+    print (f"{self.name}{self.age}{self.course}")
+
+# kesalahan, recap :
+# 1. init = kena ada dua underscore
+# 2. capitalize / case sensitive
+# 3. 
