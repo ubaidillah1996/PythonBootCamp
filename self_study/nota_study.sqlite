@@ -1,0 +1,41 @@
+apa itu sqlite :
+dictionary = simpan data dalam RAM
+sqlite = simpan data dalam database file
+
+contoh : student.database / student.DB
+
+cara guna :
+import sqlite
+
+sambung database :
+conn = sqlite3.connect("student.db)
+
+akan create secara automatik : student.db
+
+CURSOR : penyambung atau orang tengah antara database dengan python
+
+contoh EXECUTE table :
+
+cursor.execute("""
+CREATE TABLE student(
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    age INTEGER
+
+)""")
+
+contoh SIMPAN data :
+cursor.execute("""
+    INSERT INTO students(name, age)
+    VALUES (?,?)
+""",("Ali", 25))
+
+contoh SAVE data :
+conn.commit()
+
+contoh AMBIL data :
+cursor.EXECUTE("SELECT * FROM students)
+students = cursor.fetchall()
+print(students)
+
+
