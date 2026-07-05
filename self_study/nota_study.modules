@@ -1,0 +1,19 @@
+modules ? = fail python lain yang kita import
+
+kenapa guna modules? = kalau tak semua code ada dalam satu file
+
+cara import : 
+import calculator
+calculator.add(5,3)
+
+import functin tertentu :
+from calculator import add
+add(5,3)
+
+contoh lain :
+import calculator as calc
+calc.add(5,3)
+
+built-in module :
+
+
