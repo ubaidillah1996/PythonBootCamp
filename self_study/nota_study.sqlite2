@@ -1,0 +1,85 @@
+kenapa sqlite penting?
+jika guna dicitonary, simpan data di RAM, bila run semula projek, sama ada berat / data hilang setiap kali dibuka
+susah nak cari data banyak dan tak sesuai untuk kegunaan sebenar.
+
+SQLIE, simpan data dalam database, mcm excel, tapi lebih power.
+
+FASA 1 : create database
+
+import sqlite3 # import module
+conn = sqlite.connect("job_tracker.db) #create kalau takde database
+print("database created)
+conn.close()
+
+FASE 2 : create table
+
+cursor = conn.cursor()
+
+cursor.execute(""
+CREATE TABLE IF NOT EXIST applications (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    company TEXT,
+    position TEXT,
+    status TEXT
+)
+"")
+
+conn.commit()
+conn.close()
+
+print("Table Created")
+
+FASA 3 : intsert data
+
+cursor.execute("""
+    INSERT INTO applications #parameterized query dan kegunaan ini lebih selamat
+    (company, position, status)
+    VALUES (?,?,?)
+""", "Gamuda", "Applied", "Engineer")
+
+conn.commit()
+conn.close()
+
+FASA 4 : view data
+
+cursor.execute ("SELECT" * FROM applications")
+rows = cursor.fecthall()
+
+for row in rows;
+    print(row)
+
+conn.close()
+
+FASA 6 : search data  # cari data tertentu
+
+cursor.execute ("""
+SELECT * FROM applications
+WHERE company = ?
+""", ("Gamuda Ai",))
+
+result = cursor.fetchall()
+
+print(result)
+
+sama kegunaan untuk update dan delete.
+
+BONUS : daripada selalu ulang untuk connect database
+
+setiap fail, buat satu fail khas : database.py
+
+import sqlite3
+
+def get_connection():
+    return sqlite3.connect("job_tracker.db")
+
+seiap kali nak connect :
+from database import get_connection
+
+conn = get_connection()
+cursor = conn.cursor()
+
+
+
+
+
+
