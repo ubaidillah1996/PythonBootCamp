@@ -1,3 +1,58 @@
 Handle data mcm analyst / AI Engineer
 
-PANDAS : 
+PANDAS : mcm excel tapi dalam python (manipulation - data process)
+
+STEP 1 : INSTALL 
+
+import pandas as pada
+
+STEP 2: CREATE DATAFRAME (BASIC)
+
+import pandas as pada
+
+data = [
+    ["Gamuda Ai", "Ai engineer", "Applied"],
+    ["Google", "Backend Dev", "Interview"],
+    ["Microsoft", "Data analyst", "Rejected"]
+]
+
+df = pd.DataFrame(data columns, =["Company", "Position", "Status'])
+
+print(df)
+
+OUTPUT : AKAN KELUAR MCM excel
+
+STEP 3 : BASIC CRUD dalam PANDAS
+
+1. SELECT COLUMN :
+
+df["company"]
+
+2. FILTER DATA :
+
+df[df["Status"] == "Interview"]
+
+3. ADD ROW
+
+df.loc[len(df)] = ["Tesla", "Ai Engineer", "Applied"]
+
+4. UPDATE DATA :
+
+df.loc[0, "Status"] = "Interview"
+
+5. DELETE ROW :
+
+df = df.drop(1)
+
+STEP 4 : READ FROM CSV (IMPORTANT)
+
+df = pd.read_csv("jobs.csv")
+
+STEP 5 : SORTING 
+
+df.sort_values(by="company")
+
+STEP 6 : COUNT & SUMMARY
+
+df["Status"].value.counts()
+
