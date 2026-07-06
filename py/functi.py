@@ -22,8 +22,9 @@ print(get_primes(77))
 
 # Formula : F = (C × 9/5) + 32
 
-def celcius_to_fahrenheit(celcius):
-    return(celcius * 9/5) + 32
+# def celcius_to_fahrenheit(celcius):
+#     return(celcius * 9/5) + 32
 
-temp = float(input("Enter Temp to celcius: "))
-print("Fahrenheit:", celcius_to_fahrenheit(temp))
+# temp = float(input("Enter Temp to celcius: "))
+# print("Fahrenheit:", celcius_to_fahrenheit(temp))
+

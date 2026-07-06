@@ -17,6 +17,8 @@ students_records = [
     }
 ]
 
+# print(students_records)
+
 # Exercise 2 : add new student .
 
 new_student = {
@@ -29,7 +31,18 @@ new_student = {
 
 students_records.append(new_student)
 
-# Exercise 3 : Loop all
+print(students_records)
 
-for student in students_records:
-    print(student["ID"],student["Name"],student["Major"])
+# Exercise 3 : Update Jon's age to 20
+
+# for student in students_records: 
+#     if student["Name"] == "John":
+#         student["Age"] = 20
+
+# print(students_records)
+
+
+# # Exercise 4 : Loop all # display semua maklumat
+
+# for student in students_records:
+    # print(student["ID"],student["Name"],student["Major"])
