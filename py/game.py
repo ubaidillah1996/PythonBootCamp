@@ -38,6 +38,10 @@ hero = character(name="Bobo", health=100, attack_damage=25)
 monster = character(name="Bubu", health=90, attack_damage= 20)
 
 print("Fight!")
-hero.attack(monster) # hero serang monster
-monster.attack(hero) # monster serang hero
+hero.attack(monster) # hero serang monster # sword = damage
+monster.attack(hero) # monster serang hero # casting spell = damage
 hero.heal(22) # hero healing
+
+## nota tambahan : polymorphism
+# method sama, hasil berbeza.
+# okey faham. kalau matematik, kira shape, cara kira sama, hasil berbeza.
