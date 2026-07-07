@@ -54,5 +54,11 @@ df.sort_values(by="company")
 
 STEP 6 : COUNT & SUMMARY
 
-df["Status"].value.counts()
+df["Status"].value_counts()
+
+STEP 7 : TAMBAH COLUMN BARU
+
+df["priority"] = df["Status"].apply(
+    lambda x : '"Higth" if x == "Interview" else "Low"
+)
 
